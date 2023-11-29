@@ -1,0 +1,25 @@
+<ng-container *ngIf="!showDialog">
+  <header>
+    <a routerLink="/home" class="logo">Viss Fashion</a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#clothing">Clothing</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </nav>
+    <ul class="nav_links">
+      <li (click)="openDialog()">Login</li>
+      <li><button (click)="openDialog()">Sign Up</button></li>
+    </ul>
+  </header>
+</ng-container>
+<ng-container *ngIf="showDialog">
+  <div class="overlay" *ngIf="showDialog">
+    <div class="close" (click)="closeDialog()">&times;</div>
+    <div class="content">
+      <app-signup-login></app-signup-login>
+    </div>
+  </div>
+</ng-container>

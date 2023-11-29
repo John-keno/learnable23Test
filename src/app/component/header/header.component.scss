@@ -1,0 +1,105 @@
+li,
+a,
+button {
+  text-decoration: none;
+  font-size: 24px;
+  word-wrap: break-word;
+  cursor: pointer;
+
+  @media screen and (max-width: 1366px) {
+    font-size: 18px;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  @media screen and (max-width: 1366px) {
+    padding: 30px 50px;
+  }
+}
+
+.logo {
+  color: black;
+  font-size: 48px;
+  cursor: pointer;
+  @media screen and (max-width: 1366px) {
+    font-size: 24px;
+  }
+}
+
+.nav_links {
+  li {
+    font-weight: 400;
+    display: inline-block;
+    padding: 0px 20px;
+
+    @media screen and (max-width: 1366px) {
+      padding: 0px 10px;
+    }
+
+    a {
+      transition: all 0.5s ease 0s;
+      color: black;
+      font-weight: 400;
+      &:hover {
+        color: #000000b9;
+      }
+    }
+    &:hover {
+      color: #000000b9;
+    }
+  }
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 500;
+  padding: 20px 50px;
+  background-color: #e87a14;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.5s ease 0s;
+  @media screen and (max-width: 1366px) {
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  &:hover {
+    background-color: #e87a14da;
+  }
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom left, #9c2a2a, #9c2a2a, #e8af14);
+  background-color: #11111133;
+}
+.content {
+  max-height: 846px;
+  background-color: white;
+  border-radius: 20px;
+  @media screen and (max-width: 1366px) {
+    max-height: 432;
+  }
+}
+.close {
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  top: 32px;
+  left: 95%;
+  cursor: pointer;
+
+  @media screen and (max-width: 1366px) {
+    left: 90%;
+  }
+}
